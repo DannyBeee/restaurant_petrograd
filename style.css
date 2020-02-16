@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+
+body {
+    font-family: 'Sigmar One', cursive;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    align-content: center;
+    overflow: hidden;
+}
+
+.wrapper > div {
+    text-align: center;
+    
+}
+
+img {
+    border-radius: 8px;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 599px) {
+    
+    body {
+        padding: 0;
+    }
+    
+    #products-container-starter {
+ 
+    display: grid;
+        grid-row-gap: 25px;
+   grid-template-columns: auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-main {
+ 
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-dessert {
+ 
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-sideorders {
+ 
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-drinks {
+
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto;
+align-items: center;
+    text-align: center;
+}
+    
+    
+}
+
+
+
+
+
+@media screen and (max-width: 899px) and (min-width: 600px) {
+    body {
+        padding: 0;
+    }
+    
+    #products-container-starter {
+
+    display: grid;
+        grid-row-gap: 25px;
+   grid-template-columns: auto auto ;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-main {
+
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto ;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-dessert {
+ 
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto ;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-sideorders {
+
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto ;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-drinks {
+
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto ;
+align-items: center;
+    text-align: center;
+}
+    
+}
+    
+@media screen and (min-width: 900px) {
+        #products-container-starter {
+            grid-row-gap: 25px;
+    display: grid;
+   grid-template-columns: auto auto auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-main {
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-dessert {
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-sideorders {
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto auto;
+align-items: center;
+    text-align: center;
+}
+
+#products-container-drinks {
+    display: grid;
+    grid-row-gap: 25px;
+   grid-template-columns: auto auto auto;
+align-items: center;
+    text-align: center;
+}
+
+    }
+
+.long-description {
+  display: none;
+}
+
+.long-description.expanded {
+  display: block !important;
+}
+
+.product-card {
+ 
+    position: relative;
+    margin: auto;
+    padding-bottom: 55px;
+   
+}
+
+.more-info-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition-duration: .4s;
+    border: none;
+    font-size: 17px;
+    font-family: 'Sigmar One', cursive;
+}
+
+.more-info-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.discount {
+    color: green;
+    font-size: 25px;
+}
